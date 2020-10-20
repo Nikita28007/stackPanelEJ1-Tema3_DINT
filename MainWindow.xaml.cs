@@ -22,6 +22,7 @@ namespace stackPanelFrom
     {
         public MainWindow()
         {
+
             InitializeComponent();
         
         }
