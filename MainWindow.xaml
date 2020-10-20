@@ -52,10 +52,10 @@
             </StackPanel>
         </Border>
 
-        <WrapPanel HorizontalAlignment="Right" >
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
             <Button  MaxWidth="100" Content="Aceptar" Margin="0,0,10,0" />
             <Button  MaxWidth="100" Content="Cancelar" Margin="0,0,10,0" />
-        </WrapPanel>
+        </StackPanel>
 
 
 
