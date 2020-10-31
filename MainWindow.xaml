@@ -7,7 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="343.46" Width="650"
         MaxWidth="800" MinWidth="400">
-    
+
+    <Window.Resources>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="Margin" Value="7"/>
+        </Style>
+              
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="7"/>
+            <Setter Property="Height" Value="23"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="MaxWidth" Value="100"/>
+            <Setter Property="Margin" Value="0,0,10,0"/>
+        </Style>
+    </Window.Resources>
+
     <StackPanel  >
 
         <Border Margin="10">
@@ -19,8 +38,8 @@
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel>
-                <TextBlock Margin="7" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Text="Nombre"/>
-                <TextBox Margin="7" Height="23" TextWrapping="Wrap" Text=""/>
+                <TextBlock TextWrapping="Wrap" Text="Nombre"/>
+                <TextBox  TextWrapping="Wrap" Text=""/>
             </StackPanel>
         </Border>
 
@@ -33,8 +52,8 @@
             </Border.Background>
             <StackPanel>
 
-                <TextBlock FontWeight="Bold" FontSize="16" Margin="7" TextWrapping="Wrap" Text="Dirección"/>
-                <TextBox Margin="7" Height="23" TextWrapping="Wrap" Text=""/>
+                <TextBlock  TextWrapping="Wrap" Text="Dirección"/>
+                <TextBox   TextWrapping="Wrap" Text=""/>
             </StackPanel>
         </Border>
 
@@ -47,14 +66,14 @@
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel>
-                <TextBlock FontWeight="Bold" FontSize="16" Margin="7" TextWrapping="Wrap" Text="Correo electrónico"/>
-                <TextBox Margin="7" Height="23" Width="650"  MaxWidth="670" HorizontalAlignment="Left" Text=""/>
+                <TextBlock  TextWrapping="Wrap" Text="Correo electrónico"/>
+                <TextBox Width="650"  MaxWidth="670" HorizontalAlignment="Left" Text=""/>
             </StackPanel>
         </Border>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
-            <Button  MaxWidth="100" Content="Aceptar" Margin="0,0,10,0" />
-            <Button  MaxWidth="100" Content="Cancelar" Margin="0,0,10,0" />
+            <Button  Content="Aceptar"  />
+            <Button  Content="Cancelar"  />
         </StackPanel>
 
 
